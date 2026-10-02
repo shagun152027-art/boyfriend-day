@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>for my boyfriend ♡</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:
+        radial-gradient(circle at 20% 10%, rgba(255,190,210,.7), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255,130,160,.35), transparent 30%),
+        linear-gradient(135deg,#fff0f4,#ffd8e3,#ffb6c9,#f98fae);
+
+    color:#641f32;
+
+    font-family:'Playfair Display',serif;
+}
+
+/* ---------------- HEARTS ---------------- */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    font-size:20px;
+    opacity:.7;
+    animation:floatHeart linear infinite;
+    filter:drop-shadow(0 0 8px rgba(255,70,120,.4));
+}
+
+.heart:nth-child(1){left:5%;animation-duration:11s;font-size:17px}
+.heart:nth-child(2){left:13%;animation-duration:15s;font-size:28px}
+.heart:nth-child(3){left:25%;animation-duration:9s;font-size:14px}
+.heart:nth-child(4){left:36%;animation-duration:13s;font-size:23px}
+.heart:nth-child(5){left:48%;animation-duration:10s;font-size:18px}
+.heart:nth-child(6){left:60%;animation-duration:16s;font-size:27px}
+.heart:nth-child(7){left:72%;animation-duration:12s;font-size:16px}
+.heart:nth-child(8){left:84%;animation-duration:14s;font-size:24px}
+.heart:nth-child(9){left:94%;animation-duration:10s;font-size:18px}
+
+@keyframes floatHeart{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-115vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ---------------- GENERAL ---------------- */
+
+.page{
+    min-height:100vh;
+    width:100%;
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    padding:70px 22px;
+}
+
+.container{
+    width:min(900px,100%);
+    text-align:center;
+}
+
+.small{
+    font-family:'Poppins',sans-serif;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    opacity:.65;
+}
+
+h1{
+    font-family:'DM Serif Display',serif;
+    font-style:italic;
+    font-size:clamp(48px,12vw,95px);
+    line-height:1;
+    margin:20px 0;
+}
+
+h2{
+    font-family:'DM Serif Display',serif;
+    font-style:italic;
+    font-size:clamp(40px,9vw,72px);
+    margin-bottom:25px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.divider{
+    width:80px;
+    height:2px;
+    margin:25px auto;
+    background:linear-gradient(90deg,transparent,#a62d4d,transparent);
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+button,
+.link-button{
+    border:none;
+    text-decoration:none;
+
+    background:linear-gradient(135deg,#8d203c,#e95779,#ff9bb2);
+
+    color:white;
+
+    padding:14px 27px;
+    border-radius:50px;
+
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:16px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 25px rgba(117,24,49,.2);
+
+    transition:.3s;
+}
+
+button:hover,
+.link-button:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+.music-button{
+    margin-top:25px;
+}
+
+/* ---------------- CAT COUPLE ---------------- */
+
+.cats{
+    height:190px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    margin:20px auto;
+}
+
+.cat{
+    width:105px;
+    height:100px;
+    border-radius:50% 50% 45% 45%;
+    position:relative;
+    margin:0 -5px;
+    animation:bob 2s ease-in-out infinite;
+}
+
+.cat.left{
+    background:#fff7f3;
+    border:3px solid #e59aae;
+}
+
+.cat.right{
+    background:#8e4b5e;
+    border:3px solid #713143;
+    animation-delay:.3s;
+}
+
+.ear{
+    position:absolute;
+    width:35px;
+    height:35px;
+    top:-15px;
+    background:inherit;
+    transform:rotate(45deg);
+    border-radius:8px;
+}
+
+.ear.one{left:8px}
+.ear.two{right:8px}
+
+.eye{
+    position:absolute;
+    width:7px;
+    height:10px;
+    border-radius:50%;
+    background:#461725;
+    top:43px;
+}
+
+.cat.right .eye{
+    background:#fff;
+}
+
+.eye.one{left:30px}
+.eye.two{right:30px}
+
+.nose{
+    position:absolute;
+    top:58px;
+    left:48px;
+    width:9px;
+    height:7px;
+    border-radius:50%;
+    background:#d95778;
+}
+
+.mouth{
+    position:absolute;
+    top:66px;
+    left:44px;
+    width:18px;
+    height:9px;
+    border-bottom:2px solid #632034;
+    border-radius:50%;
+}
+
+.cat.right .mouth{
+    border-color:#fff;
+}
+
+.paw{
+    position:absolute;
+    width:35px;
+    height:18px;
+    border-radius:50%;
+    bottom:-4px;
+    background:inherit;
+    left:35px;
+}
+
+.kiss{
+    position:absolute;
+    left:50%;
+    top:58px;
+    transform:translateX(-50%);
+    font-size:30px;
+    animation:kiss 1.8s ease-in-out infinite;
+}
+
+@keyframes bob{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+}
+
+@keyframes kiss{
+    0%,100%{transform:translateX(-50%) scale(.8);opacity:.4}
+    50%{transform:translateX(-50%) scale(1.2);opacity:1}
+}
+
+/* ---------------- CARDS ---------------- */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:18px;
+    margin-top:35px;
+}
+
+.card{
+    background:rgba(255,255,255,.48);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.7);
+
+    border-radius:25px;
+
+    padding:25px 20px;
+
+    box-shadow:0 15px 35px rgba(112,34,55,.1);
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-7px) rotate(-1deg);
+}
+
+.card-title{
+    font-size:21px;
+    font-style:italic;
+}
+
+.reveal{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+
+    transition:.5s;
+
+    font-family:'Poppins',sans-serif;
+    font-size:13px;
+    line-height:1.7;
+
+    margin-top:0;
+}
+
+.card.open .reveal{
+    max-height:200px;
+    opacity:1;
+    margin-top:15px;
+}
+
+/* ---------------- TIMELINE ---------------- */
+
+.timeline{
+    margin:40px auto;
+    max-width:650px;
+    text-align:left;
+}
+
+.timeline-item{
+    position:relative;
+    padding:0 0 40px 35px;
+    border-left:2px solid rgba(128,32,57,.35);
+}
+
+.timeline-item:last-child{
+    border-left:none;
+}
+
+.timeline-item::before{
+    content:"♡";
+    position:absolute;
+    left:-13px;
+    top:0;
+
+    width:24px;
+    height:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#ffe0e8;
+    border-radius:50%;
+
+    color:#8d203c;
+}
+
+.timeline-item h3{
+    font-size:24px;
+    font-style:italic;
+    margin-bottom:8px;
+}
+
+.timeline-item p{
+    font-size:15px;
+}
+
+/* ---------------- OPEN WHEN ---------------- */
+
+.envelope{
+    background:rgba(255,255,255,.5);
+    padding:30px 20px;
+    border-radius:25px;
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(112,34,55,.1);
+}
+
+.envelope:hover{
+    transform:translateY(-6px);
+}
+
+.envelope-icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+/* ---------------- REVIEW ---------------- */
+
+.review{
+    max-width:600px;
+    margin:30px auto;
+
+    background:rgba(255,255,255,.45);
+    padding:30px;
+
+    border-radius:30px;
+
+    text-align:left;
+}
+
+.review-row{
+    display:flex;
+    justify-content:space-between;
+
+    padding:13px 0;
+
+    border-bottom:1px solid rgba(100,31,50,.12);
+}
+
+.stars{
+    letter-spacing:3px;
+}
+
+/* ---------------- FINAL ---------------- */
+
+.final-letter{
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(15px);
+
+    padding:35px 25px;
+
+    border-radius:30px;
+
+    max-width:700px;
+
+    box-shadow:0 20px 50px rgba(99,27,46,.12);
+}
+
+.signature{
+    font-size:25px;
+    margin-top:30px;
+    font-style:italic;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:600px){
+
+    .page{
+        padding:65px 18px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .cat{
+        width:85px;
+        height:82px;
+    }
+
+    .cats{
+        height:160px;
+    }
+
+    .eye.one{left:24px}
+    .eye.two{right:24px}
+
+    .nose{
+        left:38px;
+    }
+
+    .mouth{
+        left:34px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING HEARTS -->
+
+<div class="hearts">
+
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<audio id="song" loop preload="auto">
+    <source src="bade-acche-lagte-hai.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- ================= PAGE 1 ================= -->
+
+<section class="page" id="home">
+
+<div class="container">
+
+<div class="small">a tiny little something for you</div>
+
+<h1>hey boyfriend...</h1>
+
+<p>
+i made you a little corner of the internet<br>
+because apparently one message wasn't enough ♡
+</p>
+
+<div class="cats">
+
+<div class="cat left">
+    <div class="ear one"></div>
+    <div class="ear two"></div>
+    <div class="eye one"></div>
+    <div class="eye two"></div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+    <div class="paw"></div>
+</div>
+
+<div class="kiss">💋</div>
+
+<div class="cat right">
+    <div class="ear one"></div>
+    <div class="ear two"></div>
+    <div class="eye one"></div>
+    <div class="eye two"></div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+    <div class="paw"></div>
+</div>
+
+</div>
+
+<button class="music-button" onclick="startMusic()">
+    ♫ play our song
+</button>
+
+<br><br>
+
+<a href="#warning" class="link-button">
+    okay... continue ♡
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 2 ================= -->
+
+<section class="page" id="warning">
+
+<div class="container">
+
+<div class="small">important warning</div>
+
+<h2>before you continue...</h2>
+
+<div class="divider"></div>
+
+<p>
+⚠️ this website contains<br><br>
+
+excessive amounts of me loving you<br>
+embarrassing levels of cuteness<br>
+some very questionable memories<br>
+and one girl who is very very attached to you
+</p>
+
+<br>
+
+<a href="#story" class="link-button">
+    i accept the consequences →
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 3 ================= -->
+
+<section class="page" id="story">
+
+<div class="container">
+
+<div class="small">chapter one</div>
+
+<h2>and then there was us ♡</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>the first sight</h3>
+
+<p>
+okay so technically you probably don't even know this happened 😭
+<br><br>
+
+main CC lab ke yaha se walk kar rahi thi...
+aur maine tumhe apni aankhon ke corner se dekha.
+<br><br>
+
+and then...
+i literally turned around to look again
+<br><br>
+
+like hello??? movie scene???
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>then we started talking</h3>
+
+<p>
+one conversation became another,
+another became more conversations,
+and somehow...
+we just kept finding reasons to talk.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>and here we areeeee</h3>
+
+<p>
+look at us now.
+<br><br>
+
+from me secretly looking back at you
+to you becoming one of my favourite people.
+<br><br>
+
+life is kinda funny like that ♡
+</p>
+
+</div>
+
+</div>
+
+<a href="#things" class="link-button">
+    continue our little story →
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 4 ================= -->
+
+<section class="page" id="things">
+
+<div class="container">
+
+<div class="small">chapter two</div>
+
+<h2>things i love about you</h2>
+
+<p>
+tap each little card ♡
+</p>
+
+
+<div class="cards">
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">01 — the way you care</div>
+
+<div class="reveal">
+it's always the little things.
+the random check-ins,
+the way you notice things,
+the way you make me feel cared for without making it a big deal.
+</div>
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">02 — your smile</div>
+
+<div class="reveal">
+yes i notice it.
+yes i like it.
+no i will not be taking questions at this time.
+♡
+</div>
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">03 — making me laugh</div>
+
+<div class="reveal">
+sometimes you're actually funny.
+sometimes you're just stupid.
+unfortunately both work on me.
+</div>
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">04 — the little things</div>
+
+<div class="reveal">
+the tiny things you probably don't even realise
+you do are some of the things i remember the most.
+</div>
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">05 — simply you</div>
+
+<div class="reveal">
+out of everyone,
+i'm really really glad
+i got you.
+</div>
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+<div class="card-title">06 — us ♡</div>
+
+<div class="reveal">
+whatever this little story of ours becomes,
+i'm grateful that it started.
+</div>
+</div>
+
+</div>
+
+
+<br><br>
+
+<a href="#review" class="link-button">
+next little surprise →
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 5 ================= -->
+
+<section class="page" id="review">
+
+<div class="container">
+
+<div class="small">official documentation</div>
+
+<h2>boyfriend performance review</h2>
+
+<div class="review">
+
+<div class="review-row">
+<span>making me smile</span>
+<span class="stars">★★★★★</span>
+</div>
+
+<div class="review-row">
+<span>making me laugh</span>
+<span class="stars">★★★★★</span>
+</div>
+
+<div class="review-row">
+<span>being annoying</span>
+<span class="stars">★★★★★★★★★★</span>
+</div>
+
+<div class="review-row">
+<span>making me blush</span>
+<span>classified</span>
+</div>
+
+<div class="review-row">
+<span>being cute</span>
+<span>unfortunately yes</span>
+</div>
+
+<div class="review-row">
+<span>overall employment</span>
+<span>RENEWED ♡</span>
+</div>
+
+</div>
+
+<p>
+contract status:
+<br>
+<strong>renewed indefinitely.</strong>
+</p>
+
+<br>
+
+<a href="#openwhen" class="link-button">
+    okay now open these →
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 6 ================= -->
+
+<section class="page" id="openwhen">
+
+<div class="container">
+
+<div class="small">little envelopes</div>
+
+<h2>open when...</h2>
+
+<p>
+tap them ♡
+</p>
+
+
+<div class="cards">
+
+
+<div class="envelope" onclick="revealMessage('miss')">
+
+<div class="envelope-icon">💌</div>
+
+<h3>you miss me</h3>
+
+<div class="reveal" id="miss">
+then come here.
+<br><br>
+consider this your tiny digital hug
+until you get a real one.
+♡
+</div>
+
+</div>
+
+
+<div class="envelope" onclick="revealMessage('sad')">
+
+<div class="envelope-icon">🌷</div>
+
+<h3>you're having a bad day</h3>
+
+<div class="reveal" id="sad">
+whatever happened,
+you don't have to handle everything alone.
+<br><br>
+take a breath.
+drink some water.
+and remember i'm here.
+</div>
+
+</div>
+
+
+<div class="envelope" onclick="revealMessage('smile')">
+
+<div class="envelope-icon">🎀</div>
+
+<h3>you need to smile</h3>
+
+<div class="reveal" id="smile">
+hi stupid.
+<br><br>
+that's it.
+that's the message.
+<br><br>
+did it work? 😭
+</div>
+
+</div>
+
+
+<div class="envelope" onclick="revealMessage('love')">
+
+<div class="envelope-icon">💗</div>
+
+<h3>you need a reminder</h3>
+
+<div class="reveal" id="love">
+in case nobody told you today...
+you are very very loved.
+<br><br>
+especially by me.
+</div>
+
+</div>
+
+</div>
+
+
+<br><br>
+
+<a href="#letter" class="link-button">
+    one last thing →
+</a>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 7 ================= -->
+
+<section class="page" id="letter">
+
+<div class="container">
+
+<div class="small">the last page</div>
+
+<h2>if you made it this far...</h2>
+
+<div class="final-letter">
+
+<p>
+
+i don't really know how to put everything i feel
+into one little website.
+<br><br>
+
+but i wanted to make something that you could
+come back to whenever you wanted.
+<br><br>
+
+thank you for all the little moments,
+the conversations,
+the laughs,
+the stupid jokes,
+and everything that somehow became
+a part of our story.
+<br><br>
+
+i don't need some perfect movie-like story.
+i just want more little moments with you.
+<br><br>
+
+and honestly...
+i'm really really glad
+that one random day near the CC lab,
+i turned around.
+<br><br>
+
+because look where that little moment brought us.
+♡
+</p>
+
+<div class="signature">
+— your girl, Shaggu ♡
+</div>
+
+</div>
+
+<br><br>
+
+<a href="#home" class="link-button">
+    replay our little story ↻
+</a>
+
+</div>
+</section>
+
+
+<script>
+
+/* MUSIC */
+
+const song = document.getElementById("song");
+
+function startMusic(){
+
+    song.volume = 0.65;
+
+    song.play().then(()=>{
+
+        document.querySelector(".music-button").innerHTML =
+        "♫ our song is playing ♡";
+
+    }).catch(()=>{
+
+        alert("tap the button once more to start the song ♡");
+
+    });
+
+}
+
+
+/* CLICKABLE CARDS */
+
+function toggleCard(card){
+
+    card.classList.toggle("open");
+
+}
+
+
+/* OPEN WHEN */
+
+function revealMessage(id){
+
+    const box = document.getElementById(id);
+
+    box.classList.toggle("open");
+
+}
+
+</script>
+
+</body>
+</html>
